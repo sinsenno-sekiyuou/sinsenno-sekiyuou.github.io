@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  
+<body> 
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript"></script>
+
+<script>
+  var name = prompt('名前を入力してください');
+  // document.write(name);
+  // console.log('あけましておめでとうございます！'+name+'さん。');
+  document.write('あけましておめでとうございます！'+name+'さん');
+</script>
+
+
+<script>
+pw = prompt( "パスワード（苗字ローマ字）を入れて下さい。キャンセルで、占い開始", "" );
+if ( pw === "sekiyama" ||
+     pw === "hoshino" ||
+     pw === "oishi" ||
+     pw === "kiriake" ||
+     pw === "tamura" ||
+     pw === "yoshida" ){
+  location.href = pw + ".html";
+} else {
+  alert( "パスワードが違います！" );
+}
+
+</script>
+
+<script src="omikuji.js"></script>
+
+  <input type="button" value="おみくじを引く！" onclick="omikuji();" id="playBtn">
+    <br>
+    <div>
+        <div id="msgHeading" style="opacity: 0;">おみくじの結果は...</div>
+        <div id="msg1"></div>
+        <div id="msg2"></div>
+    </div>
+  <input type="button" value="リセット！" id="resetBtn" onclick="reset();" disabled="disabled">
+
+</body>
+</html>
