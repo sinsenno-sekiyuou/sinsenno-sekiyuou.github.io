@@ -7,7 +7,7 @@ function omikuji() {
     random1 = Math.floor(Math.random() * 5);
     console.log(random1);
 
-    const result = ['大吉', '中吉', '吉', "超大吉","ウルトラ末吉",'末吉'];
+    const result = ['大吉', '大吉よりの中吉', 'なんだかんだ大吉', "超大吉","ウルトラ中吉",'大吉'];
 
     msg1 = result[random1];
 
